@@ -4,7 +4,10 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto text-center">
-        <p className="text-sm mb-4">© 2025 Your Name. All rights reserved.</p>
+        <p className="text-sm mb-4">
+          © 2025  All rights reserved. | Developed by{" "}
+          <span className="font-semibold text-white">Anas Developer</span>
+        </p>
 
         <div className="flex justify-center gap-6">
           <a
