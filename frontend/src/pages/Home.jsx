@@ -8,7 +8,7 @@ import ContactSections from "../components/sections/ContactSections";
 
 function Home() {
   return (
-    <div className="">
+    <div className="bg-gradient-to-r from-[#055081] to-[#0177b6]">
       <Hero />
       <AboutSection />
       <ServicesSection />

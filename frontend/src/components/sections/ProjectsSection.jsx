@@ -49,7 +49,7 @@ function ProjectsSection() {
     <section
       data-aos="fade-up"
       id="projects"
-      className="py-20 bg-gradient-to-r from-[#055081] to-[#3C7F9F] px-6"
+      className="py-20  bg-gradient-to-r from-[#8686AC] to-[#4F4F8C] px-6"
     >
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold text-white mb-12">My Projects</h2>

@@ -21,28 +21,23 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center w-full max-w-6xl">
         {/* Left Side - Text & Animation */}
         <div className="md:w-1/2 text-center md:text-left space-y-6">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
+          <h1 className="text-3xl sm:text-5xl font-bold text-white leading-tight">
             Hi, I'm <span className="text-yellow-400">Anas</span>
           </h1>
           <TypeAnimation
-            sequence={[
-              "A Developer",
-              1000,
-              "A Designer",
-              2000,
-           
-            ]}
+            sequence={["Full Stack Developer", 3000, "A Designer", 3000]}
             wrapper="span"
             cursor={true}
             repeat={Infinity}
             style={{
-              fontSize: "2.5em",
+              fontSize: "2em",
               display: "inline-block",
               color: "#FFDD57",
             }}
           />
           <p className="mt-4 text-lg text-gray-200 max-w-lg mx-auto">
-            I’m passionate about building modern web applications that are user-friendly, responsive, and impactful.
+            I’m passionate about building modern web applications that are
+            user-friendly, responsive, and impactful.
           </p>
 
           {/* Download CV Button */}
@@ -102,7 +97,9 @@ const Hero = () => {
               className="w-72 h-72 object-cover rounded-full shadow-lg border-4 border-white transform transition-transform duration-300 hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 rounded-b-lg">
-              <p className="text-white text-sm font-semibold">Web Developer & Designer</p>
+              <p className="text-white text-sm font-semibold">
+                Web Developer & Designer
+              </p>
             </div>
           </div>
         </div>
