@@ -29,7 +29,7 @@ import {
 
 // ✅ Reusable Heading Component
 const SectionHeading = ({ title, subtitle }) => (
-  <div className="text-center mb-12">
+  <div className="text-center mb-12 mt-7">
     <h2 className="text-4xl font-extrabold text-white uppercase tracking-wide">
       {title}
     </h2>
@@ -232,25 +232,24 @@ function SkillsSection() {
       id="skills"
       className="bg-gradient-to-r from-[#055081] to-[#3C7F9F] py-20 px-6"
     >
-      <div className="container mx-auto ">
+      <div className="container mx-auto  ">
         {/* ✅ Frontend Skills */}
         <SectionHeading
           title="Frontend Technologies"
           subtitle="React-based UI development"
-          
         />
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
           {frontendSkills.map((skill, index) => (
             <SkillCard key={index} {...skill} />
           ))}
         </div>
 
         {/* ✅ Backend Skills */}
-        <SectionHeading 
+        <SectionHeading
           title="Backend Technologies"
           subtitle="Server-side tools for MERN"
         />
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
           {backendSkills.map((skill, index) => (
             <SkillCard key={index} {...skill} />
           ))}
