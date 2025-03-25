@@ -14,7 +14,7 @@ function AboutSection() {
 
   return (
     <section
-      data-aos="fade-up"
+      data-aos="fade-up " 
       className="flex items-center justify-center bg-gradient-to-r from-[#055081] to-[#0177b6] px-6 py-24"
     >
       <div className="flex flex-col md:flex-row items-center w-full max-w-6xl gap-10">

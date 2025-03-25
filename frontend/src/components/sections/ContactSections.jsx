@@ -5,7 +5,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 function ContactSections() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Reduced duration for better UX
+      duration: 1200, // Reduced duration for better UX
       once: true,
     });
   }, []);

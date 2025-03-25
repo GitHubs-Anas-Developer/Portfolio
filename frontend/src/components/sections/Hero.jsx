@@ -8,20 +8,20 @@ import profileImg from "../../assets/images/1712031961239 (1).jpeg"; // Profile 
 const Hero = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Slower duration for smoother animation
-      once: true,
+      duration: 1200, // Reduced duration for better UX
+      once: true, // Animation happens only once
     });
   }, []);
 
   return (
-    <section
-      data-aos="fade-up"
-      className="flex items-center justify-center bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-20"
-    >
+    <section className="flex items-center justify-center bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-20">
       <div className="flex flex-col md:flex-row items-center w-full max-w-6xl">
         {/* Left Side - Text & Animation */}
         <div className="md:w-1/2 text-center md:text-left space-y-6">
-          <h1 className="text-3xl sm:text-5xl font-bold text-white leading-tight">
+          <h1
+            className="text-3xl sm:text-5xl font-bold text-white leading-tight "
+            data-aos="fade-right"
+          >
             Hi, I'm <span className="text-yellow-400">Anas</span>
           </h1>
           <TypeAnimation
@@ -35,13 +35,16 @@ const Hero = () => {
               color: "#FFDD57",
             }}
           />
-          <p className="mt-4 text-lg text-gray-200 max-w-lg mx-auto">
+          <p
+            className="mt-4 text-lg text-gray-200 max-w-lg mx-auto"
+            data-aos="fade-left"
+          >
             I’m passionate about building modern web applications that are
             user-friendly, responsive, and impactful.
           </p>
 
           {/* Download CV Button */}
-          <div className="mt-6">
+          <div className="mt-6" data-aos="flip-up">
             <a
               href="/path/to/your/cv.pdf" // Link to your CV file
               download
@@ -89,7 +92,7 @@ const Hero = () => {
         </div>
 
         {/* Right Side - Profile Image */}
-        <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
+        <div className="md:w-1/2 flex justify-center mt-10 md:mt-0" data-aos="zoom-in">
           <div className="relative">
             <img
               src={profileImg}
