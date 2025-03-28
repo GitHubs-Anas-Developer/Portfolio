@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
-import AOS from "aos"; // Correct import
-import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FaGithub, FaLink } from "react-icons/fa"; // Importing GitHub and Link icons from react-icons
 import portfolio from "../../assets/images/Screenshot 2025-03-17 044213.png";
+import cashbook from "../../assets/images/Screenshot 2025-03-29 033618.png";
+
 function ProjectsSection() {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Slower duration for smoother animation
+      duration: 1200,
       once: true,
     });
   }, []);
+
   const projects = [
     {
       title: "Fitness Tracker App",
@@ -22,7 +26,7 @@ function ProjectsSection() {
         "Tailwind CSS",
       ],
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkIhGAzgbLll1p4OTmviRfYO6w7m5p55qQw&s", // Project image
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkIhGAzgbLll1p4OTmviRfYO6w7m5p55qQw&s",
       demoLink: "https://live-demo-link.com",
       githubLink: "https://github.com/username/fitness-tracker",
     },
@@ -35,6 +39,14 @@ function ProjectsSection() {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkIhGAzgbLll1p4OTmviRfYO6w7m5p55qQw&s",
       demoLink: "https://live-demo-link.com",
       githubLink: "https://github.com/username/e-commerce",
+    },
+    {
+      title: "Cash Note Books",
+      description: "A simple cashbook application for managing notes and finances.",
+      technologies: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
+      image: cashbook,
+      demoLink: "https://cash-note-books-1.onrender.com",
+      githubLink: "https://github.com/GitHubs-Anas-Developer/Cash-Note-Books",
     },
     {
       title: "Portfolio Website",
@@ -86,16 +98,18 @@ function ProjectsSection() {
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-600 hover:underline flex items-center gap-2"
                   >
+                    <FaLink /> {/* Link Icon */}
                     Live Demo
                   </a>
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:underline"
+                    className="text-gray-700 hover:underline flex items-center gap-2"
                   >
+                    <FaGithub /> {/* GitHub Icon */}
                     GitHub
                   </a>
                 </div>
