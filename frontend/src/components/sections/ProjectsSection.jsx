@@ -45,7 +45,7 @@ function ProjectsSection() {
       description: "A simple cashbook application for managing notes and finances.",
       technologies: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
       image: cashbook,
-      demoLink: "https://cash-note-books-1.onrender.com",
+      demoLink: "https://cash-note-books.onrender.com",
       githubLink: "https://github.com/GitHubs-Anas-Developer/Cash-Note-Books",
     },
     {
@@ -54,7 +54,7 @@ function ProjectsSection() {
         "A personal portfolio website built to showcase projects, skills, and achievements with a responsive design and smooth animations.",
       technologies: ["React", "Tailwind CSS", "React Router"],
       image: portfolio,
-      demoLink: "https://portfolio-u3ku.onrender.com/",
+      demoLink: "https://dreamcode699.onrender.com",
       githubLink: "https://github.com/GitHubs-Anas-Developer/Portfolio",
     },
   ];
