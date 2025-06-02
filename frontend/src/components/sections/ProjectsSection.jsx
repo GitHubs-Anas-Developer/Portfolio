@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { FaGithub, FaLink } from "react-icons/fa"; // Importing GitHub and Link icons from react-icons
 import portfolio from "../../assets/images/Screenshot 2025-03-17 044213.png";
 import cashbook from "../../assets/images/Screenshot 2025-03-29 033618.png";
+import x from "../../assets/images/1870465-untitleddesign3.webp"
 
 function ProjectsSection() {
   useEffect(() => {
@@ -49,6 +50,25 @@ function ProjectsSection() {
       githubLink: "https://github.com/GitHubs-Anas-Developer/Cash-Note-Books",
     },
     {
+      title: "X Clone App",
+      description:
+        "A full-stack clone of the X (Twitter) platform, including post creation, JWT authentication, media uploads via Cloudinary, and responsive UI with DaisyUI.",
+      technologies: [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "Tailwind CSS",
+        "DaisyUI",
+        "TanStack Query",
+        "JWT",
+        "Cloudinary",
+      ],
+      image: x,
+      demoLink: "https://x-clone-app-01.onrender.com",
+      githubLink: "https://github.com/GitHubs-Anas-Developer/X-clone-app", // update if needed
+    },
+    {
       title: "Portfolio Website",
       description:
         "A personal portfolio website built to showcase projects, skills, and achievements with a responsive design and smooth animations.",
@@ -67,7 +87,7 @@ function ProjectsSection() {
     >
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold text-white mb-12">My Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {projects.map((project, index) => (
             <div
               key={index}
